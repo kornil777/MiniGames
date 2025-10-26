@@ -1,0 +1,778 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(32, 32, 39);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.main {
+  height: 800px;
+  background-image: url(./content/background_main\ копия.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.main__button {
+  position: static;
+  width: 247px;
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 16px 28px 16px 28px;
+  box-sizing: border-box;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.main__button:hover {
+  background-color: white;
+  color: black;
+}
+.main__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 196px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  gap: 48px;
+}
+
+.title__header {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 24px;
+  max-width: 768px;
+}
+.title__description {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  max-width: 720px;
+}
+
+/* Полоса для анимации */
+.animation {
+  max-width: 100%;
+  background-color: rgb(188, 236, 48);
+  overflow: hidden;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.stripe {
+  position: absolute;
+  width: 3220px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  padding: 27px 49px 27px 49px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+  background-size: cover;
+  bottom: 0;
+  align-content: center;
+  flex-wrap: wrap;
+  transform: translate(-50%);
+  animation: scroll-left 15s linear infinite;
+  white-space: nowrap;
+  padding-left: 0;
+  padding-right: 0;
+}
+.stripe__word {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.stripe__starMob {
+  display: none;
+  flex-shrink: 0;
+}
+
+.about {
+  background-size: cover;
+  padding-top: 94px;
+}
+.about__heading {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-bottom: 72px;
+}
+.about__text {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+  width: 788px;
+}
+
+.star__1 {
+  position: absolute;
+  width: 584.72px;
+  height: 584.72px;
+  left: 973px;
+  top: 908.92px;
+  transform: rotate(0.23deg);
+}
+.star__2 {
+  position: absolute;
+  width: 54.6px;
+  height: 54.6px;
+  left: 45.18px;
+  top: 1622px;
+  transform: rotate(5.45deg);
+}
+.star__3 {
+  position: absolute;
+  width: 31.34px;
+  height: 31.34px;
+  left: 27.97px;
+  top: 1570px;
+  transform: rotate(5.45deg);
+}
+.star__4 {
+  position: absolute;
+  width: 35.15px;
+  height: 35.15px;
+  left: 1281.33px;
+  top: 2363px;
+  transform: rotate(7.08deg);
+}
+.star__5 {
+  position: absolute;
+  width: 68.86px;
+  height: 68.86px;
+  left: 1326.54px;
+  top: 2396px;
+  transform: rotate(5.45deg);
+}
+.star__6 {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  left: 1249px;
+  top: 5684px;
+}
+.star__7 {
+  position: absolute;
+  width: 69px;
+  height: 69px;
+  left: 1319px;
+  top: 5636px;
+}
+
+.mobstar {
+  display: none;
+}
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  padding-bottom: 50px;
+  max-width: 1440px;
+  min-width: 1200px;
+  z-index: 2;
+}
+.game__cart {
+  grid-column: span 4;
+  background-color: rgb(255, 255, 255);
+  width: 378px;
+  border-radius: 30px;
+}
+.game__cart:hover {
+  transform: scale(1.05);
+}
+.game__picture {
+  border-radius: 30px;
+}
+.game__number {
+  border-radius: 52.58px;
+  background: rgb(247, 247, 247);
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 108px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px 10px 16px;
+}
+.game__name {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.game__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 32px;
+}
+.game__item__link {
+  position: absolute;
+}
+
+.cart1 {
+  height: 473px;
+}
+
+.cart2 {
+  height: 512px;
+}
+
+.cart3 {
+  height: 473px;
+  z-index: 1;
+}
+
+.cart4 {
+  height: 551px;
+  margin-top: -7px;
+}
+
+.cart5 {
+  height: 512px;
+  margin-top: 32px;
+}
+
+.cart6 {
+  height: 551px;
+  margin-top: -7px;
+}
+
+.mini-games {
+  background-size: cover;
+  padding-top: 46px;
+}
+.mini-games__content {
+  padding-top: 72px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  padding-bottom: 144px;
+}
+.mini-games__header {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.game-block {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 1200px;
+  border-radius: 30px;
+}
+.game-block__img {
+  border-radius: 30px;
+}
+.game-block__header {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.game-block__heading {
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-top: 24px;
+}
+.game-block__button {
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 141.69%;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 247px;
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 16px 28px 16px 28px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 36px 0px;
+  border: none;
+  cursor: pointer;
+}
+.game-block__button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(0, 0, 0);
+}
+.game-block__item {
+  padding: 48px;
+  width: 504px;
+}
+
+.game2 {
+  flex-direction: row-reverse;
+}
+
+.game4 {
+  flex-direction: row-reverse;
+}
+
+.game6 {
+  flex-direction: row-reverse;
+}
+
+.footer {
+  background-color: rgb(189, 237, 53);
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.footer__text {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .body {
+    overflow-x: hidden;
+    min-width: 343px;
+  }
+  .star {
+    display: none;
+  }
+  .mobstar {
+    display: inherit;
+  }
+  .mobstar__1 {
+    position: absolute;
+    width: 224px;
+    height: 239px;
+    right: -80px;
+    top: -83px;
+    transform: rotate(-0.32deg);
+  }
+  .mobstar__2 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 38px;
+    top: 97px;
+    box-sizing: border-box;
+  }
+  .mobstar__3 {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+  }
+  .mobstar__3 {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: 92px;
+    top: 64px;
+    box-sizing: border-box;
+  }
+  .mobstar__4 {
+    position: absolute;
+    width: 39px;
+    height: 41px;
+    left: 304px;
+    top: 580px;
+    box-sizing: border-box;
+  }
+  .mobstar__5 {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 273px;
+    top: 557px;
+  }
+  .main {
+    background-image: url(./content/Back_mobile.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+  }
+  .main__content {
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    padding-top: 147px;
+  }
+  .main__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .main__button:hover {
+    background-color: black;
+    color: white;
+  }
+  .stripe {
+    position: absolute;
+    height: 51.34px;
+    left: 0;
+    top: 649px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 6px;
+    padding: 16px 24px 16px 24px;
+    box-sizing: border-box;
+    border: 0.54px solid rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(26.86px);
+            backdrop-filter: blur(26.86px);
+    background: rgb(188, 236, 48);
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .stripe__word {
+    font-size: 16px;
+  }
+  .stripe__star {
+    display: none;
+  }
+  .stripe__starMob {
+    display: block;
+  }
+  .title__header {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .title__description {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 296px;
+  }
+  .game-block {
+    width: 343px;
+    flex-direction: column-reverse;
+  }
+  .game-block__header {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 16px;
+  }
+  .game-block__heading {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 15px;
+    width: 285px;
+  }
+  .game-block__button {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    width: 285px;
+    height: 55px;
+    margin-bottom: 0;
+  }
+  .game-block__button:hover {
+    background-color: black;
+    color: white;
+  }
+  .game-block__item {
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    padding: 29px;
+    padding-top: 14px;
+    padding-left: 30px;
+  }
+  .footer {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 100px;
+    color: rgb(0, 0, 0);
+  }
+  .footer__text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .stripe__star {
+    width: 20px;
+    height: 20px;
+  }
+  .mini-games {
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: normal;
+  }
+}
+@media (max-width: 1565px) {
+  .star__1 {
+    display: none;
+  }
+}
+@media (max-width: 1402px) {
+  .star {
+    display: none;
+  }
+  .mini-games {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mini-games__content {
+    padding-top: 48px;
+    row-gap: 24px;
+    padding-bottom: 10px;
+  }
+  .mini-games__header {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .about {
+    display: none;
+  }
+}
+@media (max-width: 1230px) {
+  .game-block {
+    width: 343px;
+    flex-direction: column-reverse;
+  }
+  .game-block__header {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 16px;
+  }
+  .game-block__heading {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 15px;
+    width: 285px;
+  }
+  .game-block__button {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    width: 285px;
+    height: 55px;
+    margin-bottom: 0;
+  }
+  .game-block__button:hover {
+    background-color: black;
+    color: white;
+  }
+  .game-block__item {
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    padding-top: 14px;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .main__content {
+    width: 343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    padding-top: 147px;
+    padding-left: 0;
+    margin: auto;
+  }
+  .main__button {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .title__header {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+  .title__description {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 296px;
+  }
+}/*# sourceMappingURL=style.css.map */

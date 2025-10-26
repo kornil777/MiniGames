@@ -1,0 +1,358 @@
+@media (max-width: 767px) {
+  .body {
+    overflow-x: hidden;
+    min-width: 343px;
+  }
+
+  .star {
+    display: none;
+  }
+
+  .mobstar {
+    display: inherit;
+    &__1 {
+      position: absolute;
+      width: 224px;
+      height: 239px;
+      right: -80px;
+      top: -83px;
+      transform: rotate(-0.32deg);
+    }
+    &__2 {
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      left: 38px;
+      top: 97px;
+      box-sizing: border-box;
+    }
+    &__3 {
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      left: 92px;
+      top: 64px;
+    }
+    &__3 {
+      position: absolute;
+      width: 21px;
+      height: 21px;
+      left: 92px;
+      top: 64px;
+      box-sizing: border-box;
+    }
+    &__4 {
+      position: absolute;
+      width: 39px;
+      height: 41px;
+      left: 304px;
+      top: 580px;
+      box-sizing: border-box;
+    }
+    &__5 {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      left: 273px;
+      top: 557px;
+    }
+  }
+  .main {
+    background-image: url(./content/Back_mobile.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+
+    &__content {
+      width: 343px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 36px;
+      padding-top: 147px;
+    }
+    &__button {
+      width: 285px;
+      height: 55px;
+      font-size: 16px;
+      &:hover {
+      background-color: black;
+      color: white;
+    }
+    }
+    
+  }
+  .stripe {
+    position: absolute;
+    height: 51.34px;
+    left: 0;
+    top: 649px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 6px;
+    padding: 16px 24px 16px 24px;
+    box-sizing: border-box;
+    border: 0.54px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(26.86px);
+    background: rgb(188, 236, 48);
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 16px;
+
+    &__word {
+      font-size: 16px;
+    }
+    &__star {
+      display: none;
+    }
+    &__starMob {
+      display: block;
+    }
+  }
+
+  .title {
+    &__header {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 49px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+    &__description {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: center;
+      width: 296px;
+    }
+  }
+
+  // вторая страница
+
+  .game-block {
+    width: 343px;
+    flex-direction: column-reverse;
+    &__header {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 39px;
+      letter-spacing: 0px;
+      text-align: left;
+      padding-top: 16px;
+    }
+    &__heading {
+      color: rgb(0, 0, 0);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: left;
+      padding-top: 15px;
+      width: 285px;
+    }
+    &__button {
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 141.69%;
+      letter-spacing: 0%;
+      text-align: center;
+      box-sizing: border-box;
+      border: 1px solid rgb(32, 32, 39);
+      border-radius: 60px;
+      background: rgb(32, 32, 39);
+      width: 285px;
+      height: 55px;
+      margin-bottom: 0;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+    &__item {
+      width: 284px;
+      display: flex;
+      flex-direction: column;
+      padding: 29px;
+      padding-top: 14px;
+      padding-left: 30px;
+    }
+  }
+  .footer {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    height: 100px;
+    color: rgb(0, 0, 0);
+    &__text {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+  .stripe__star {
+    width: 20px;
+    height: 20px;
+  }
+
+  .mini-games {
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: normal;
+  }
+}
+// скрытие большой звезды
+@media (max-width: 1565px) {
+  .star__1 {
+    display: none;
+  }
+}
+// скрытие звезд и блока об играх
+@media (max-width: 1402px) {
+  .star {
+    display: none;
+  }
+  .mini-games {
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__content {
+      padding-top: 48px;
+      row-gap: 24px;
+      padding-bottom: 10px;
+    }
+
+    &__header {
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 49px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+  .about {
+    display: none;
+  }
+}
+// разрешения для блока игр
+@media (max-width: 1230px) {
+  .game-block {
+    width: 343px;
+    flex-direction: column-reverse;
+    &__header {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 39px;
+      letter-spacing: 0px;
+      text-align: left;
+      padding-top: 16px;
+    }
+    &__heading {
+      color: rgb(0, 0, 0);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: left;
+      padding-top: 15px;
+      width: 285px;
+    }
+    &__button {
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 141.69%;
+      letter-spacing: 0%;
+      text-align: center;
+      box-sizing: border-box;
+      border: 1px solid rgb(32, 32, 39);
+      border-radius: 60px;
+      background: rgb(32, 32, 39);
+      width: 285px;
+      height: 55px;
+      margin-bottom: 0;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+    &__item {
+      width: 284px;
+      display: flex;
+      flex-direction: column;
+      padding: 28px;
+      padding-top: 14px;
+      padding-left: 30px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .main {
+    &__content {
+      width: 343px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 36px;
+      padding-top: 147px;
+      padding-left: 0;
+      margin: auto;
+    }
+    &__button {
+      width: 285px;
+      height: 55px;
+      font-size: 16px;
+    }
+  }
+  .title {
+    &__header {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 49px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+    &__description {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: center;
+      width: 296px;
+    }
+  }
+}

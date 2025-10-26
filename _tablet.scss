@@ -1,0 +1,78 @@
+@media (max-width: 1240px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .star {
+    &__1 {
+      display: none;
+    }
+  }
+  .game {
+    min-width: auto;
+    
+  }
+  .star {
+    display: none;
+  }
+  .game-block {
+    width: 343px;
+    flex-direction: column-reverse;
+    &__header {
+      color: rgb(32, 32, 39);
+      font-family: Montserrat;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 39px;
+      letter-spacing: 0px;
+      text-align: left;
+      padding-top: 16px;
+    }
+    &__heading {
+      color: rgb(0, 0, 0);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: left;
+      padding-top: 15px;
+    }
+    &__button {
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 141.69%;
+      letter-spacing: 0%;
+      text-align: center;
+      box-sizing: border-box;
+      border: 1px solid rgb(32, 32, 39);
+      border-radius: 60px;
+      background: rgb(32, 32, 39);
+      width: 285px;
+      height: 55px;
+      margin-bottom: 0;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+    &__item {
+      width: 284px;
+      display: flex;
+      flex-direction: column;
+      padding: 29px;
+      padding-top: 14px;
+      padding-left: 30px;
+    }
+  }
+  .mini-games__content {
+    flex-direction: row;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
+}

@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+$background-color: rgb(32, 32, 39);
+$header-color: rgb(255, 255, 255);
+$cart-background: rgb(255, 255, 255);
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: $background-color;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+// первая страница
+.main {
+  height: 800px;
+  background-image: url(./content/background_main\ копия.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  
+
+  &__button {
+    position: static;
+    width: 247px;
+    height: 66px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 16px 28px 16px 28px;
+    box-sizing: border-box;
+    border: 1px solid rgb(32, 32, 39);
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 196px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    gap: 48px;
+  }
+}
+
+.title {
+  &__header {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 24px;
+    max-width: 768px;
+  }
+
+  &__description {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    max-width: 720px;
+  }
+}
+
+/* Полоса для анимации */
+.animation {
+  max-width: 100%;
+  background-color: rgb(188, 236, 48);
+  overflow: hidden;
+}
+@keyframes scroll-left{
+  from {
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(-50%);
+  }
+  };
+.stripe {
+  position: absolute;
+  width: 3220px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  gap: 51px;
+  padding: 27px 49px 27px 49px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background: rgb(188, 236, 48);
+  background-size: cover;
+  bottom: 0;
+  align-content: center;
+  flex-wrap: wrap;
+  transform: translate(-50%);
+  animation: scroll-left 15s linear infinite;
+  white-space: nowrap;
+  padding-left: 0;
+  padding-right: 0;
+
+
+  &__word {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+    flex-shrink: 0;
+  }
+  &__starMob {
+    display: none;
+    flex-shrink: 0;
+  }
+}
+
+
+
+// раздел об играх
+.about {
+  background-size: cover;
+  padding-top: 94px;
+
+  &__heading {
+    color: $header-color;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-bottom: 72px;
+  }
+  &__text {
+    color: $header-color;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 24px;
+    width: 788px;
+  }
+}
+
+// звезды
+.star {
+  &__1 {
+    position: absolute;
+    width: 584.72px;
+    height: 584.72px;
+    left: 973px;
+    top: 908.92px;
+    transform: rotate(0.23deg);
+  }
+  &__2 {
+    position: absolute;
+    width: 54.6px;
+    height: 54.6px;
+    left: 45.18px;
+    top: 1622px;
+    transform: rotate(5.45deg);
+  }
+  &__3 {
+    position: absolute;
+    width: 31.34px;
+    height: 31.34px;
+    left: 27.97px;
+    top: 1570px;
+    transform: rotate(5.45deg);
+  }
+  &__4 {
+    position: absolute;
+    width: 35.15px;
+    height: 35.15px;
+    left: 1281.33px;
+    top: 2363px;
+    transform: rotate(7.08deg);
+  }
+  &__5 {
+    position: absolute;
+    width: 68.86px;
+    height: 68.86px;
+    left: 1326.54px;
+    top: 2396px;
+    transform: rotate(5.45deg);
+  }
+  &__6 {
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    left: 1249px;
+    top: 5684px;
+  }
+  &__7 {
+    position: absolute;
+    width: 69px;
+    height: 69px;
+    left: 1319px;
+    top: 5636px;
+  }
+}
+.mobstar {
+  display: none;
+}
+.game {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  padding-bottom: 50px;
+  max-width: 1440px;
+  min-width: 1200px;
+  z-index: 2;
+
+  &__cart {
+    grid-column: span 4;
+    background-color: $cart-background;
+    width: 378px;
+    border-radius: 30px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+  &__picture {
+    border-radius: 30px;
+  }
+  &__number {
+    border-radius: 52.58px;
+    background: rgb(247, 247, 247);
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: 0px;
+    text-align: left;
+    width: 108px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px 10px 16px;
+  }
+  &__name {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 32px;
+
+    &__link {
+      position: absolute;
+    }
+  }
+}
+.cart1 {
+  height: 473px;
+}
+.cart2 {
+  height: 512px;
+}
+.cart3 {
+  height: 473px;
+  z-index: 1;
+}
+.cart4 {
+  height: 551px;
+  margin-top: -7px;
+}
+.cart5 {
+  height: 512px;
+  margin-top: 32px;
+}
+.cart6 {
+  height: 551px;
+  margin-top: -7px;
+}
+
+// раздел Мини-игры
+.mini-games {
+  // background-color: $background-color;
+  background-size: cover;
+  padding-top: 46px;
+  &__content {
+    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding-bottom: 144px;
+  }
+  &__header {
+    color: $header-color;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+
+.game-block {
+  background-color: $cart-background;
+  display: flex;
+  width: 1200px;
+  border-radius: 30px;
+  &__img {
+    border-radius: 30px;
+  }
+  &__header {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  &__heading {
+    color: rgb(32, 32, 39);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-top: 24px;
+  }
+  &__button {
+    border-radius: 60px;
+    background: rgb(32, 32, 39);
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 247px;
+    height: 66px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    padding: 16px 28px 16px 28px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 36px 0px;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid rgba(0, 0, 0, 1);
+    }
+  }
+  &__item {
+    padding: 48px;
+    width: 504px;
+  }
+}
+.game2 {
+  flex-direction: row-reverse;
+}
+.game4 {
+  flex-direction: row-reverse;
+}
+.game6 {
+  flex-direction: row-reverse;
+}
+
+.footer {
+  background-color: rgb(189, 237, 53);
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+// @import "tablet";
+@import "mobile";
+
